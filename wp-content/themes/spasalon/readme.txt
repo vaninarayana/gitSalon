@@ -258,5 +258,3 @@ Do you enjoy this theme? Send your ideas - issues - on the theme forms . Thank y
 released
 
 # --- EOF --- #
-
-Not an end
