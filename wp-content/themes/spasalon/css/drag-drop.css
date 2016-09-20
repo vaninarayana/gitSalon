@@ -1,7 +1,7 @@
 .demo
  {
-  background-color: #f22853;
-  border-color: #f22853;
+  background-color: orangered;
+  border-color: orangered;
  }
  .upgrade {
   background-color: #1d4467;
@@ -36,7 +36,7 @@
 
 .pro-vesrion p{line-height:20px;} 
 
-#accordion-section-spasalon_pro_section .accordion-section-title, .accordion-section-title:after {background:#f22853; color:#fff;}
+#accordion-section-spasalon_pro_section .accordion-section-title, .accordion-section-title:after {background:orangered; color:#fff;}
 #accordion-section-spasalon_pro_section .accordion-section-title:after {color:#fff;}
 
 .customizer_layout {
