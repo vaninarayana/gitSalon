@@ -1,22 +1,18 @@
-/*!
-* Theme Name: SpaSalon Pro 
-* Theme URI: http://webriti.com/demo/wp/spasalon
-* Description: A theme for SPA SALON and BEAUTY SALON type of business that uses multiple nav menus, right-sidebar,Featured Slider and Custom post layouts. 
-It has a pixel-perfect design that is great for any blogger who wants a new look for their site.
-* Version: 2.5.1
-* Author: Webriti
+/*
+* Theme Name: Spasalon
+* Theme URI: http://webriti.com/spasalon-lite-description/
+* Description: SpaSalon is a Full Responsive Multi-Purpose Theme suitable for spa, salons, beauty, care, girly, hair, health, hospitality, massage, medical, parlor, physiotherapy, wellness, yoga, health blog  and for any type of business's. Spasalon is a fast, lightweight, mobile responsive WordPress theme built with speed, SEO and usability in mind. Theme has 9 widget ready areas which helps you in creating any type of site, support for drop-down menus, in built core widgets and contact form 7 styling support. Create your website exactly the way you want it using the Customizer and see your changes take place right in front of you before publishing. Create an effective online shop presence since theme have a support for very famous plugin, WooCommerce. Separate Woocommerce Sidebar added in the shop pages so that you can add different set of widgets from default templates. Premium version of Spasalon Theme supports Contact Form 7 and Google Maps plugin, offers you more number of widget ready areas, built in core widgets like Team Widget, Services Widget, Product Slider Widget etc, number of predefined template like about us , contact us, portfolio etc and even you can customize the layouts of sidebars on Business Template without adding a single line of code. Navigate to Appearance > Customize to start customizing.
+* Version: 1.7.1
+* Author: webriti
 * Author URI: http://www.webriti.com
-* Tags: Pink,white,full-width-template, threaded-comments, ,right-sidebar,
-* Text Domain: 'spasalon'
-*
-* License: GNU General Public License v2.0
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*
-* Copyright (c) 2013 Webriti. All rights reserved.
-* http://www.webriti.com
+* Tags: full-width-template, threaded-comments, right-sidebar, one-column, two-columns, custom-menu, sticky-post, translation-ready, featured-images, blog, footer-widgets, e-commerce, education, entertainment, food-and-drink, holiday, photography, portfolio
+* License: GNU General Public License v3.0
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Copyright (c) 2013 webriti. All rights reserved.
+* Text Domain: 'spasalon' 
 */
-/* Add additional stylesheets below
--------------------------------------------------- */
+
+
 body {
 	background: #ffffff;
     color: #626668;
@@ -51,10 +47,11 @@ p { margin: 0 0 25px; }
 a, a:hover, a:focus { transition: all 0.3s ease 0s; text-decoration: none; }
 img, .wp-post-image { display: block; height: auto; max-width: 100%; }
 ul li, ol li { color: #626668; font-size: 15px; line-height: 25px; margin: 0; padding: 6px 0; vertical-align: top; }
-h1.txt  { text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.6); }
-.txt p{ text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6); }
+h1.txt-white { color: #ffffff; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6); }
+h1.txt-black { color: #202020; text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.6); }
+.txt-white p{ color: #ffffff; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6); }
+.txt-black p{ color: #202020; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6); }
 .border-double { border-top: 4px double #e2e2e2; }
-.media .media-body { width: auto !important; }
 /*===================================================================================*/
 /*	FLEX SLIDER CSS
 /*===================================================================================*/
@@ -140,21 +137,18 @@ a.thumb-btn {
 	transition: all 0.3s;
 }
 a.thumb-btn {
-	margin-left: 10px;
-    position: absolute;
-    z-index: 999999;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 a.thumb-btn:before {
 	content: "";
@@ -241,10 +235,13 @@ a.thumb-btn:hover:before, a.thumb-btn:focus:before, a.thumb-btn:active:before {
 .service .post, .home-post .post { margin: 0 0 40px; }
 .service p:last-child { margin: 0; }
 .site-content .post .post-thumbnail img { transition: all 300ms ease-out 0s; opacity: 1; width: 100%; }
-.site-content .post:hover .post-thumbnail img { -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0) scale(1.15, 1.15); -moz-transform: translateZ(0) scale(1.15, 1.15); transform: translateZ(0) scale(1.15, 1.15); opacity: 1; }
+.site-content .post:hover .post-thumbnail img { -webkit-transform: scale(1.15); -moz-transform: scale(1.15); transform: scale(1.15); opacity: 1; }
 .post .post-thumbnail { margin-bottom: 25px; width: 100%; overflow: hidden; position: relative; display:block; }
 .post .post-thumbnail img { transition: all 300ms ease-out 0s; opacity: 1; width: 100%; }
-.post:hover .post-thumbnail img { -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0) scale(1.15, 1.15); -moz-transform: translateZ(0) scale(1.15, 1.15); transform: translateZ(0) scale(1.15, 1.15); opacity: 1; }
+.post:hover .post-thumbnail img { -webkit-transform: scale(1.15); -moz-transform: scale(1.15); transform: scale(1.15); opacity: 1; }
+
+.products .post:hover .post-thumbnail img { -webkit-transform: none; -moz-transform: none; transform: none; opacity: 1; }
+
 .entry-header { display: block; margin: 0 0 20px; padding: 0; }
 .entry-header .entry-title { font-weight: 500; }
 .entry-header .entry-title > a { color: #4b453f; }
@@ -460,43 +457,6 @@ span.entry-date .month-year { display: block; font-size: 14px; line-height: 20px
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-
-/*===================================================================================*/
-/*  ABOUT PAGE SECTION CSS
-/*===================================================================================*/
-
-.about { margin: 0; }
-.page-title { font-weight: 400; margin: 0 0 25px; }
-.about-info { padding: 15px 40px 0 0; } 
-.about-info p { margin: 0 0 15px; }
-.about-img-area { margin: 0; }
-.separator { border-bottom: 1px solid #e9e9e9; margin: 35px 0; display: block; } 
-.team { padding: 35px 0; }
-.team p { margin: 0; }
-.team-title { font-weight: 400; margin: 0 0 25px; }
-.team-gravatar { width: 180px; height: auto; float: left; padding: 0 20px 20px 0; }
-.team-gravatar img { border-radius: 50%; border-top: 5px solid #d8d8d8; }
-.team .team-name { font-weight: 400; padding: 0 0 5px; margin: 0; }
-.team-designation { display: block; font-size: 15px; font-weight: 400; line-height: 20px; padding: 0 0 10px; }
-.team-social { margin: 0 !important; padding: 20px 0 0 !important; }
-.team-social li {
-    background-color: #c8c8c8;
-	border-radius: 50%;
-    display: inline-block;
-    height: 25px;
-	width: 25px;
-    padding: 0px;
-	margin: 0 2px 0 0;
-    text-align: center;
-    transition: background 0.5s ease-in-out 0s;
-} 
-.team-social li > a { color: #ffffff !important; display: block; font-size: 14px; line-height: 27px; }
-.team-social li > a:hover { color: #ffffff !important; }
-.team-social li.facebook:hover, .team-social li.facebook:focus { background-color: #4c66a4; }
-.team-social li.twitter:hover, .team-social li.twitter:focus { background-color: #15b4c9; }
-.team-social li.googleplus:hover, .team-social li.googleplus:focus { background-color: #dd4b39; }
-
-
 /*===================================================================================*/
 /*  PRODUCT PAGE SECTION CSS
 /*===================================================================================*/
@@ -510,7 +470,7 @@ span.entry-date .month-year { display: block; font-size: 14px; line-height: 20px
     margin: 0 0 40px;
 	float: left;
     padding: 0px 0 15px;
-    width: 100%;
+    width: 20%;
 	background: #ffffff;
     border-right: 1px solid #eae7e4;
 	border-bottom: 1px solid #eae7e4;
@@ -542,19 +502,6 @@ span.entry-date .month-year { display: block; font-size: 14px; line-height: 20px
 .product-name, .product-price, .product-detail .price { font-size: 18px; line-height: 20px; font-weight: 500; display: block; }
 .product-name { margin-bottom: 8px; }
 .product-description { font-size: 15px; line-height: 25px; font-weight: 400; margin-bottom: 18px; } 
-
-
-/*===================================================================================*/
-/*  PRODUCT DETAIL SECTION CSS
-/*===================================================================================*/
-
-.product-detail { margin: 0px; overflow: auto; }
-.product-detail .item-product { width: 33%; }
-.product-detail .media { margin-bottom: 65px; padding-top: 5px; }
-.product-detail .product-thumbnail { margin-right: 25px; width: 300px; padding: 10px; height: auto; float: left; border: 1px solid #eae7e4; }
-.product-detail h3 { font-weight: 400; margin-bottom: 15px; }
-.product-detail p { margin-bottom: 10px; }
-.product-detail .price { margin-bottom: 15px; }
 
 
 /*===================================================================================*/
@@ -703,6 +650,7 @@ span.entry-date .month-year { display: block; font-size: 14px; line-height: 20px
 /*===================================================================================*/
 /*  FOOTER SIDEBAR WIDGET CSS
 /*===================================================================================*/
+/*.footer-sidebar { background-color: #f6f2ec; margin: 15px 0 0; padding: 60px 0 0px; width: 100%; }*/
 .empty-footer-sidebar {background-color: #f6f2ec; padding: 60px 0 0px; width: 100%; }
 .footer-sidebar .widget .widget-title { 
 	background-color: transparent;
@@ -938,5 +886,70 @@ div[class*="wbr_feature_page_widget"] p .more-link { margin: 24px 0 0; }
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
+.sticky{}
+.bypostauthor{}
 
-.google-map #wpgmza_map { margin: 0 0 30px; border-bottom: 4px solid #f22853; }
+/* Main Slider Thumbnails Area */
+.slider-thumb-container{
+	background: #ffffff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 4em;
+    z-index: 1;
+    bottom: 0em;
+    margin: 0px auto;
+    height: 174px;
+    padding-top: 19px;
+    display: block;
+	padding-left: 0;
+    padding-right: 0;
+}
+.thumb-img-container
+ {  
+    height: 155px;
+    width:31.3%;  
+   float:left;
+     margin-left:1.50%;
+  
+ }
+ 
+.slider-thumb{
+	
+	display: block;
+    height: 155px;
+	 width:100%; 
+	padding: 0px;
+
+}
+@media (min-width: 1025px) and (max-width: 1152px) { 
+
+.slider-thumb-container{
+bottom: 0em;
+}
+
+}
+
+.products .entry-header, .products .entry-content { padding: 0 20px; }
+.padding-none{padding-left:0px !important; padding-right:0px !important;}
+
+/* Gallery Css Here*/
+.gallery .gallery-icon img { 
+	-moz-box-shadow: 0 0 5px 2px #ccc;
+	-webkit-box-shadow: 0 0 5px 2px #ccc;
+	box-shadow: 0 0 5px 2px #ccc;
+	border: 5px solid #fff !important;
+    display: inline-block;
+}
+.gallery-item .gallery-caption {
+	font-family: 'Roboto';
+    color: #787878;
+    font-weight: 400;
+    display: block;
+	word-wrap: break-word;
+	font-size: 16px;
+	margin: 12px 0;
+	text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+}

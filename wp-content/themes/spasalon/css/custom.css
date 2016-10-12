@@ -49,7 +49,7 @@
     margin-right: 50px;
 	padding: 17px 0px;
 }
-.navbar > .container .navbar-brand { margin-left: 0px; padding:3px;}
+.navbar > .container .navbar-brand { margin-left: 0px; }
 .navbar-default .navbar-brand { color: #1b1b1b; } 
 .navbar-inverse {
     border-bottom: 0;
