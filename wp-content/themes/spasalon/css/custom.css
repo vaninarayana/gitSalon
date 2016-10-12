@@ -19,8 +19,7 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	border-radius: 0px;
-	//box-shadow: 5px 1px 3px #e8ecee;
-	border-bottom:3px solid orangered;
+	box-shadow: 5px 1px 3px #e8ecee;
 }
 .nav {
     list-style: outside none none;
@@ -68,7 +67,6 @@
 .navbar .navbar-nav > li {
     margin-right: 0px;
     padding: 0 0 0px 0px;
-    margin-right:1px;
 }
 .navbar-default .navbar-nav > li > a {
 	color: #72797b;
